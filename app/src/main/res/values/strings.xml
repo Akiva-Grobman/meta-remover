@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Meta Remover</string>
+    <string name="click_text">Click here to Share</string>
+    <string name="image_description">Image to share</string>
+    <string name="home_page">Hello,\nThis app will send an image without any metadata\n#metaverse
+    </string>
+    <string name="authority">com.akivagrobman.metaremover</string>
+</resources>
