@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
         if (receivedAction.equals(Intent.ACTION_MAIN)) {
             Toast.makeText(this,
                     getString(R.string.wrong_entry_point_message),
-                    Toast.LENGTH_SHORT).show();
+                    Toast.LENGTH_LONG).show();
         }
     }
 
