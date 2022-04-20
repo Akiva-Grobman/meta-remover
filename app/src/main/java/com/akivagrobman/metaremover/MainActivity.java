@@ -36,6 +36,10 @@ public class MainActivity extends AppCompatActivity {
                         Bitmap bitmap = MediaStore.Images.Media.getBitmap(this.getContentResolver(),
                                 receivedUri);
                         shareImage(bitmap);
+                        Toast.makeText(this,
+                                getString(R.string.sending_image),
+                                Toast.LENGTH_LONG)
+                                .show();
                     } catch (IOException e) {
                         e.printStackTrace();
                     }
@@ -53,6 +57,7 @@ public class MainActivity extends AppCompatActivity {
                     getString(R.string.wrong_entry_point_message),
                     Toast.LENGTH_LONG).show();
         }
+        finish();
     }
 
     private void shareImage(Bitmap bitmap) {
