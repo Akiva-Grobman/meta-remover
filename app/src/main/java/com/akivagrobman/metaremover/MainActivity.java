@@ -8,7 +8,6 @@ import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
-import android.util.Log;
 import android.widget.Toast;
 
 import java.io.File;
@@ -16,8 +15,6 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 
 public class MainActivity extends AppCompatActivity {
-
-    static final String TAG = MainActivity.class.getSimpleName();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
         String receivedAction = getIntent().getAction();
         if (receivedAction.equals(Intent.ACTION_MAIN)) {
             Toast.makeText(this,
-                    "This app shouldn't be opened this way",
+                    getString(R.string.wrong_app_use),
                     Toast.LENGTH_SHORT).show();
         }
     }
