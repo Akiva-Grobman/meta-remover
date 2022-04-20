@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
         String receivedAction = getIntent().getAction();
         if (receivedAction.equals(Intent.ACTION_MAIN)) {
             Toast.makeText(this,
-                    getString(R.string.wrong_app_use),
+                    getString(R.string.wrong_entry_point_message),
                     Toast.LENGTH_SHORT).show();
         }
     }

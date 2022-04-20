@@ -8,7 +8,7 @@
     <string name="authority">
         com.akivagrobman.metaremover
     </string>
-    <string name="wrong_app_use">
+    <string name="wrong_entry_point_message">
         This app should not be opened this way\nTry sharing an image to this app
     </string>
 </resources>
